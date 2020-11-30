@@ -1,0 +1,235 @@
+@font-face {
+  font-family: Roboto-Medium;
+  src:url("./assets/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src:url("./assets/fonts/Roboto-Light.ttf");
+}
+body{
+  background:rgba(241,243,246);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Roboto;
+  color:white;
+  background: none;
+}
+header{
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px ;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.navBar{
+  width: 35%;
+  height: 50px;
+  display: flex;
+  line-height: 50px;
+  justify-content: space-between;
+  font-size: 15px;
+  opacity: 0.7;
+
+}
+
+.entryButtons{
+  width: 40%;
+  text-align: end;
+
+}
+.loginButton{
+  width: 20%;
+  height: 50px;
+  border: none;
+  font-weight: 100;
+}
+.registryButton{
+  width: 30%;
+  height: 50px;
+  opacity: 0.7;
+  border: 1px solid white;
+  background: transparent;
+}
+.headerBackground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 600px;
+  width: 100%;
+  background: linear-gradient(150deg, rgba(142,27,226,1) 0%, rgba(219,4,54,1) 35%, rgba(61,203,232,1) 100%);
+  z-index: -1;
+}
+main{
+  width: 100%;
+  padding-left:10%;
+  margin-top: 100px;
+}
+.mainTitle{
+  width: 40%;
+  font-size:40px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.trialButton{
+  background: white;
+  color: black;
+  width: 200px;
+  height: 50px;
+  font-family: Roboto-Medium;
+  letter-spacing: 1px;
+  border: none;
+  margin-bottom: 40px;
+}
+.features{
+  width: 100%;
+  padding: 5% 10%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.feature{
+  width: 30%;
+  font-size: 20px;
+}
+.feature__header{
+  color:black;
+  font-family: Roboto-Medium;
+  font-size: 25px;
+  margin-bottom: 40px;
+
+}
+.feature__description{
+  color:black;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+.feature__icon{
+  color:black;
+  width: 50px;
+
+}
+.rightRhomb{
+  position: relative;
+  left: -5px;
+}
+.funds{
+  width: 100%;
+  padding: 0 15% 0 10%  ;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.funds__header{
+  width: 30%;
+  color: black;
+  font-size: 40px;
+  font-family: Roboto-Medium;
+}
+.funds__description{
+  width: 50%;
+  color: black;
+  font-size: 20px;
+  line-height: 40px;
+}
+.dropDownMenu{
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 10px;
+}
+.showDropDownMenu{
+
+}
+
+@media screen and (max-width: 768px){
+  .headerBackground{
+    height: 800px;
+  }
+  .dropDownMenu{
+    display: block;
+
+  }
+  .navBar{
+    display: none;
+  }
+  .showDropDownMenu{
+    display: flex;
+    width: 70%;
+    height: 130px;
+    position: absolute;
+    flex-direction: column;
+    top: 10px;
+    left: 15%;
+    margin: 0 auto;
+    padding: 0 5%;
+    z-index: 1;
+    background: #000;
+    justify-content: flex-start;
+  }
+  .navBar>a{
+    width: 50%;
+    height: 30px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    line-height: 30px;
+  }
+  .entryButtons{
+    width: 60%;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .registryButton{
+    width: 50%;
+  }
+  .main{
+    padding-left:20%;
+  }
+  .mainTitle{
+    width: 80%;
+  }
+  .features{
+    flex-direction: column;
+  }
+  .feature{
+    width: 100%;
+  }
+  .feature__header{
+    margin-top: 20px;
+  }
+  .feature__description{
+    margin-bottom:30px;
+  }
+  .funds{
+    flex-direction: column;
+  }
+  .funds__header{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .funds__description{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header{
+    width: 100%;
+    margin: 0;
+    padding: 5%;
+  }
+  .entryButtons {
+    width: 80%;
+  }
+  }
